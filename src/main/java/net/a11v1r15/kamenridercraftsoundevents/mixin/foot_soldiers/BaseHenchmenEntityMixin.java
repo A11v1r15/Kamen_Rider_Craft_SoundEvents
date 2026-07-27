@@ -1,4 +1,4 @@
-package net.a11v1r15.kamenridercraftsoundevents.mixin;
+package net.a11v1r15.kamenridercraftsoundevents.mixin.foot_soldiers;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;

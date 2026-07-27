@@ -38,5 +38,35 @@
 			"mob/ghast/fireball4"
 		],
 		"subtitle": "subtitles.entity.kamenridercraft.henchman.shoot"
+	},
+	"entity.kamenridercraft.abaddon.ambient": {
+		"sounds": [
+			"mob/pillager/idle1",
+			"mob/pillager/idle2",
+			"mob/pillager/idle3",
+			"mob/pillager/idle4"
+		],
+		"subtitle": "subtitles.entity.kamenridercraft.abaddon.ambient"
+	},
+	"entity.kamenridercraft.abaddon.death": {
+		"sounds": [
+			"mob/pillager/death1",
+			"mob/pillager/death2"
+		],
+		"subtitle": "subtitles.entity.kamenridercraft.abaddon.death"
+	},
+	"entity.kamenridercraft.abaddon.hurt": {
+		"sounds": [
+			"mob/pillager/hurt1",
+			"mob/pillager/hurt2",
+			"mob/pillager/hurt3"
+		],
+		"subtitle": "subtitles.entity.kamenridercraft.abaddon.hurt"
+	},
+	"entity.kamenridercraft.abaddon.shoot": {
+		"sounds": [
+			"mob/ghast/fireball4"
+		],
+		"subtitle": "subtitles.entity.kamenridercraft.abaddon.shoot"
 	}
 }

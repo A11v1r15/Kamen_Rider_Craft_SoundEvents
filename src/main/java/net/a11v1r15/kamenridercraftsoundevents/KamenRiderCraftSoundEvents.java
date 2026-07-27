@@ -24,11 +24,17 @@ public class KamenRiderCraftSoundEvents {
 
 	public static final DeferredRegister<SoundEvent> SOUND_EVENTS = DeferredRegister.create(BuiltInRegistries.SOUND_EVENT, KamenRiderCraftSoundEvents.MODID);
 
+	public static final Supplier<SoundEvent> HENCHMAN_STEP = registerSoundEvent("entity.kamenridercraft.henchman.step");
+
 	public static final Supplier<SoundEvent> HENCHMAN_AMBIENT = registerSoundEvent("entity.kamenridercraft.henchman.ambient");
 	public static final Supplier<SoundEvent> HENCHMAN_HURT = registerSoundEvent("entity.kamenridercraft.henchman.hurt");
 	public static final Supplier<SoundEvent> HENCHMAN_DEATH = registerSoundEvent("entity.kamenridercraft.henchman.death");
-	public static final Supplier<SoundEvent> HENCHMAN_STEP = registerSoundEvent("entity.kamenridercraft.henchman.step");
 	public static final Supplier<SoundEvent> HENCHMAN_SHOOT = registerSoundEvent("entity.kamenridercraft.henchman.shoot");
+
+	public static final Supplier<SoundEvent> ABADDON_AMBIENT = registerSoundEvent("entity.kamenridercraft.abaddon.ambient");
+	public static final Supplier<SoundEvent> ABADDON_HURT = registerSoundEvent("entity.kamenridercraft.abaddon.hurt");
+	public static final Supplier<SoundEvent> ABADDON_DEATH = registerSoundEvent("entity.kamenridercraft.abaddon.death");
+	public static final Supplier<SoundEvent> ABADDON_SHOOT = registerSoundEvent("entity.kamenridercraft.abaddon.shoot");
 
 	private static Supplier<SoundEvent> registerSoundEvent(String name) {
 		ResourceLocation id = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftSoundEvents.MODID, name);

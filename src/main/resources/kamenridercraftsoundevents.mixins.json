@@ -3,7 +3,8 @@
   "package": "net.a11v1r15.kamenridercraftsoundevents.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "BaseHenchmenEntityMixin"
+    "foot_soldiers.BaseHenchmenEntityMixin",
+    "foot_soldiers.AbaddonEntityMixin"
   ],
   "client": [
   ],
