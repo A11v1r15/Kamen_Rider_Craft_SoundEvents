@@ -8,10 +8,11 @@ import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.llamalad7.mixinextras.injector.ModifyReturnValue;
 
 import net.a11v1r15.kamenridercraftsoundevents.KamenRiderCraftSoundEvents;
+import net.a11v1r15.kamenridercraftsoundevents.ShootSoundProvider;
 import net.minecraft.sounds.SoundEvent;
 
 @Mixin(value = BaseHenchmenEntity.class)
-public abstract class BaseHenchmenEntityMixin {
+public abstract class BaseHenchmenEntityMixin implements ShootSoundProvider {
     @ModifyReturnValue(at = @At("RETURN"),
 	method = "getAmbientSound()Lnet/minecraft/sounds/SoundEvent;")
 	private SoundEvent kamenridercraftsoundevents$changeAmbientSound(SoundEvent original) {
@@ -35,6 +36,11 @@ public abstract class BaseHenchmenEntityMixin {
 	private SoundEvent kamenridercraftsoundevents$changeStepSound(SoundEvent original) {
 		return KamenRiderCraftSoundEvents.HENCHMAN_STEP.get();
 	}
+	
+	@Override
+    public SoundEvent getShootSound() {
+        return KamenRiderCraftSoundEvents.HENCHMAN_SHOOT.get();
+    }
 
 	@ModifyArg( at = @At(
 		value = "INVOKE",
@@ -42,6 +48,6 @@ public abstract class BaseHenchmenEntityMixin {
 	), index = 0,
 	method = "performRangedAttack(Lnet/minecraft/world/entity/LivingEntity;F)V")
 	private SoundEvent kamenridercraftsoundevents$changeShootSound(SoundEvent original) {
-		return KamenRiderCraftSoundEvents.HENCHMAN_SHOOT.get();
+		return ((ShootSoundProvider)this).getShootSound();
 	}
 }
