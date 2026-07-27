@@ -1,0 +1,42 @@
+{
+	"entity.kamenridercraft.henchman.ambient": {
+		"sounds": [
+			"mob/pillager/idle1",
+			"mob/pillager/idle2",
+			"mob/pillager/idle3",
+			"mob/pillager/idle4"
+		],
+		"subtitle": "subtitles.entity.kamenridercraft.henchman.ambient"
+	},
+	"entity.kamenridercraft.henchman.death": {
+		"sounds": [
+			"mob/pillager/death1",
+			"mob/pillager/death2"
+		],
+		"subtitle": "subtitles.entity.kamenridercraft.henchman.death"
+	},
+	"entity.kamenridercraft.henchman.hurt": {
+		"sounds": [
+			"mob/pillager/hurt1",
+			"mob/pillager/hurt2",
+			"mob/pillager/hurt3"
+		],
+		"subtitle": "subtitles.entity.kamenridercraft.henchman.hurt"
+	},
+	"entity.kamenridercraft.henchman.step": {
+		"sounds": [
+			"mob/zombie/step1",
+			"mob/zombie/step2",
+			"mob/zombie/step3",
+			"mob/zombie/step4",
+			"mob/zombie/step5"
+		],
+		"subtitle": "subtitles.block.generic.footsteps"
+	},
+	"entity.kamenridercraft.henchman.shoot": {
+		"sounds": [
+			"mob/ghast/fireball4"
+		],
+		"subtitle": "subtitles.entity.kamenridercraft.henchman.shoot"
+	}
+}
