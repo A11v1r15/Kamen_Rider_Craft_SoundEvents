@@ -31,6 +31,10 @@
     ],
     "subtitle": "subtitles.entity.kamenridercraft.gatton_bugster_mob.hurt"
   },
+  "entity.kamenridercraft.tora_can.death": {
+    "sounds": ["mob/villager/death"],
+    "subtitle": "subtitles.entity.kamenridercraft.tora_can.death"
+  },
   "entity.kamenridercraft.jeeb_stomach.shoot": {
     "sounds": ["mob/ghast/fireball4"],
     "subtitle": "subtitles.entity.kamenridercraft.jeeb_stomach.shoot"
@@ -78,6 +82,10 @@
       "mob/pillager/hurt3"
     ],
     "subtitle": "subtitles.entity.kamenridercraft.calibur.hurt"
+  },
+  "entity.kamenridercraft.urataros.shoot": {
+    "sounds": ["mob/ghast/fireball4"],
+    "subtitle": "subtitles.entity.kamenridercraft.urataros.shoot"
   },
   "entity.kamenridercraft.yummy_mob.ambient": {
     "sounds": [
@@ -228,6 +236,14 @@
     ],
     "subtitle": "subtitles.entity.kamenridercraft.anguis_masculus.hurt"
   },
+  "entity.kamenridercraft.kujaku_can.ambient": {
+    "sounds": [
+      "mob/villager/idle1",
+      "mob/villager/idle2",
+      "mob/villager/idle3"
+    ],
+    "subtitle": "subtitles.entity.kamenridercraft.kujaku_can.ambient"
+  },
   "entity.kamenridercraft.neotrooper.death": {
     "sounds": [
       "mob/pillager/death1",
@@ -317,6 +333,10 @@
       "mob/pillager/death2"
     ],
     "subtitle": "subtitles.entity.kamenridercraft.battle_raider.death"
+  },
+  "entity.kamenridercraft.auto_vajin_robo.shoot": {
+    "sounds": ["mob/ghast/fireball4"],
+    "subtitle": "subtitles.entity.kamenridercraft.auto_vajin_robo.shoot"
   },
   "entity.kamenridercraft.core.hurt": {
     "sounds": [
@@ -411,6 +431,10 @@
     ],
     "subtitle": "subtitles.entity.kamenridercraft.phoenix_phantom.hurt"
   },
+  "entity.kamenridercraft.kujaku_can.shoot": {
+    "sounds": ["mob/ghast/fireball4"],
+    "subtitle": "subtitles.entity.kamenridercraft.kujaku_can.shoot"
+  },
   "entity.kamenridercraft.storious.shoot": {
     "sounds": ["mob/ghast/fireball4"],
     "subtitle": "subtitles.entity.kamenridercraft.storious.shoot"
@@ -461,6 +485,10 @@
     ],
     "subtitle": "subtitles.entity.kamenridercraft.bugstervirus_mob.hurt"
   },
+  "entity.kamenridercraft.taka_can.death": {
+    "sounds": ["mob/villager/death"],
+    "subtitle": "subtitles.entity.kamenridercraft.taka_can.death"
+  },
   "entity.kamenridercraft.rideplayer.hurt": {
     "sounds": [
       "mob/pillager/hurt1",
@@ -486,6 +514,14 @@
       "mob/pillager/idle4"
     ],
     "subtitle": "subtitles.entity.kamenridercraft.battle_raider.ambient"
+  },
+  "entity.kamenridercraft.tojima_takoyaki.ambient": {
+    "sounds": [
+      "mob/villager/idle1",
+      "mob/villager/idle2",
+      "mob/villager/idle3"
+    ],
+    "subtitle": "subtitles.entity.kamenridercraft.tojima_takoyaki.ambient"
   },
   "entity.kamenridercraft.zangetsu_shin.shoot": {
     "sounds": ["mob/ghast/fireball4"],
@@ -690,6 +726,15 @@
     ],
     "subtitle": "subtitles.entity.kamenridercraft.glare.ambient"
   },
+  "entity.kamenridercraft.tora_can.hurt": {
+    "sounds": [
+      "mob/villager/hit1",
+      "mob/villager/hit2",
+      "mob/villager/hit3",
+      "mob/villager/hit4"
+    ],
+    "subtitle": "subtitles.entity.kamenridercraft.tora_can.hurt"
+  },
   "entity.kamenridercraft.gord_drive.shoot": {
     "sounds": ["mob/ghast/fireball4"],
     "subtitle": "subtitles.entity.kamenridercraft.gord_drive.shoot"
@@ -726,6 +771,14 @@
     ],
     "subtitle": "subtitles.entity.kamenridercraft.ankh_complete_mob.ambient"
   },
+  "entity.kamenridercraft.kodama_suika_arms.ambient": {
+    "sounds": [
+      "mob/villager/idle1",
+      "mob/villager/idle2",
+      "mob/villager/idle3"
+    ],
+    "subtitle": "subtitles.entity.kamenridercraft.kodama_suika_arms.ambient"
+  },
   "entity.kamenridercraft.gazer.death": {
     "sounds": [
       "mob/pillager/death1",
@@ -741,6 +794,14 @@
     ],
     "subtitle": "subtitles.entity.kamenridercraft.odin.hurt"
   },
+  "entity.kamenridercraft.basshaa.ambient": {
+    "sounds": [
+      "mob/villager/idle1",
+      "mob/villager/idle2",
+      "mob/villager/idle3"
+    ],
+    "subtitle": "subtitles.entity.kamenridercraft.basshaa.ambient"
+  },
   "entity.kamenridercraft.nyelv_stomach.shoot": {
     "sounds": ["mob/ghast/fireball4"],
     "subtitle": "subtitles.entity.kamenridercraft.nyelv_stomach.shoot"
@@ -751,6 +812,10 @@
       "mob/pillager/death2"
     ],
     "subtitle": "subtitles.entity.kamenridercraft.destron_combatman.death"
+  },
+  "entity.kamenridercraft.urataros.death": {
+    "sounds": ["mob/villager/death"],
+    "subtitle": "subtitles.entity.kamenridercraft.urataros.death"
   },
   "entity.kamenridercraft.agent.death": {
     "sounds": [
@@ -905,6 +970,15 @@
     ],
     "subtitle": "subtitles.entity.kamenridercraft.glotta_stomach.hurt"
   },
+  "entity.kamenridercraft.kodama_suika_arms.hurt": {
+    "sounds": [
+      "mob/villager/hit1",
+      "mob/villager/hit2",
+      "mob/villager/hit3",
+      "mob/villager/hit4"
+    ],
+    "subtitle": "subtitles.entity.kamenridercraft.kodama_suika_arms.hurt"
+  },
   "entity.kamenridercraft.new_mole_imagin.hurt": {
     "sounds": [
       "mob/pillager/hurt1",
@@ -921,6 +995,10 @@
       "mob/pillager/idle4"
     ],
     "subtitle": "subtitles.entity.kamenridercraft.duke.ambient"
+  },
+  "entity.kamenridercraft.taka_can.shoot": {
+    "sounds": ["mob/ghast/fireball4"],
+    "subtitle": "subtitles.entity.kamenridercraft.taka_can.shoot"
   },
   "entity.kamenridercraft.destron_combatman.hurt": {
     "sounds": [
@@ -1053,9 +1131,25 @@
     ],
     "subtitle": "subtitles.entity.kamenridercraft.eden.ambient"
   },
+  "entity.kamenridercraft.ryutaros.ambient": {
+    "sounds": [
+      "mob/villager/idle1",
+      "mob/villager/idle2",
+      "mob/villager/idle3"
+    ],
+    "subtitle": "subtitles.entity.kamenridercraft.ryutaros.ambient"
+  },
   "entity.kamenridercraft.sabela.shoot": {
     "sounds": ["mob/ghast/fireball4"],
     "subtitle": "subtitles.entity.kamenridercraft.sabela.shoot"
+  },
+  "entity.kamenridercraft.gorilla_can.ambient": {
+    "sounds": [
+      "mob/villager/idle1",
+      "mob/villager/idle2",
+      "mob/villager/idle3"
+    ],
+    "subtitle": "subtitles.entity.kamenridercraft.gorilla_can.ambient"
   },
   "entity.kamenridercraft.vail.shoot": {
     "sounds": ["mob/ghast/fireball4"],
@@ -1145,6 +1239,14 @@
   "entity.kamenridercraft.neotrooper.shoot": {
     "sounds": ["mob/ghast/fireball4"],
     "subtitle": "subtitles.entity.kamenridercraft.neotrooper.shoot"
+  },
+  "entity.kamenridercraft.tora_can.ambient": {
+    "sounds": [
+      "mob/villager/idle1",
+      "mob/villager/idle2",
+      "mob/villager/idle3"
+    ],
+    "subtitle": "subtitles.entity.kamenridercraft.tora_can.ambient"
   },
   "entity.kamenridercraft.gamel_mob.shoot": {
     "sounds": ["mob/ghast/fireball4"],
@@ -1263,6 +1365,10 @@
     ],
     "subtitle": "subtitles.entity.kamenridercraft.muchiri_mob.death"
   },
+  "entity.kamenridercraft.momotaros.death": {
+    "sounds": ["mob/villager/death"],
+    "subtitle": "subtitles.entity.kamenridercraft.momotaros.death"
+  },
   "entity.kamenridercraft.end_rider.death": {
     "sounds": [
       "mob/pillager/death1",
@@ -1362,6 +1468,14 @@
     ],
     "subtitle": "subtitles.entity.kamenridercraft.giger.death"
   },
+  "entity.kamenridercraft.taka_watchroid.ambient": {
+    "sounds": [
+      "mob/villager/idle1",
+      "mob/villager/idle2",
+      "mob/villager/idle3"
+    ],
+    "subtitle": "subtitles.entity.kamenridercraft.taka_watchroid.ambient"
+  },
   "entity.kamenridercraft.zangetsu_shin.death": {
     "sounds": [
       "mob/pillager/death1",
@@ -1399,6 +1513,15 @@
       "mob/pillager/hurt3"
     ],
     "subtitle": "subtitles.entity.kamenridercraft.chap_grey.hurt"
+  },
+  "entity.kamenridercraft.ptera_can.hurt": {
+    "sounds": [
+      "mob/villager/hit1",
+      "mob/villager/hit2",
+      "mob/villager/hit3",
+      "mob/villager/hit4"
+    ],
+    "subtitle": "subtitles.entity.kamenridercraft.ptera_can.hurt"
   },
   "entity.kamenridercraft.calibur.shoot": {
     "sounds": ["mob/ghast/fireball4"],
@@ -1509,6 +1632,14 @@
     "sounds": ["mob/ghast/fireball4"],
     "subtitle": "subtitles.entity.kamenridercraft.red_nazca_dopant.shoot"
   },
+  "entity.kamenridercraft.denkiunagi_can.ambient": {
+    "sounds": [
+      "mob/villager/idle1",
+      "mob/villager/idle2",
+      "mob/villager/idle3"
+    ],
+    "subtitle": "subtitles.entity.kamenridercraft.denkiunagi_can.ambient"
+  },
   "entity.kamenridercraft.mad_rogue.shoot": {
     "sounds": ["mob/ghast/fireball4"],
     "subtitle": "subtitles.entity.kamenridercraft.mad_rogue.shoot"
@@ -1581,6 +1712,15 @@
   "entity.kamenridercraft.gremlin_phantom.shoot": {
     "sounds": ["mob/ghast/fireball4"],
     "subtitle": "subtitles.entity.kamenridercraft.gremlin_phantom.shoot"
+  },
+  "entity.kamenridercraft.auto_vajin_robo.hurt": {
+    "sounds": [
+      "mob/villager/hit1",
+      "mob/villager/hit2",
+      "mob/villager/hit3",
+      "mob/villager/hit4"
+    ],
+    "subtitle": "subtitles.entity.kamenridercraft.auto_vajin_robo.hurt"
   },
   "entity.kamenridercraft.gmrider.death": {
     "sounds": [
@@ -1679,6 +1819,15 @@
     ],
     "subtitle": "subtitles.entity.kamenridercraft.caucasus.death"
   },
+  "entity.kamenridercraft.tako_can.hurt": {
+    "sounds": [
+      "mob/villager/hit1",
+      "mob/villager/hit2",
+      "mob/villager/hit3",
+      "mob/villager/hit4"
+    ],
+    "subtitle": "subtitles.entity.kamenridercraft.tako_can.hurt"
+  },
   "entity.kamenridercraft.combat_roid.hurt": {
     "sounds": [
       "mob/pillager/hurt1",
@@ -1716,6 +1865,14 @@
   "entity.kamenridercraft.kaiser_reverse.shoot": {
     "sounds": ["mob/ghast/fireball4"],
     "subtitle": "subtitles.entity.kamenridercraft.kaiser_reverse.shoot"
+  },
+  "entity.kamenridercraft.urataros.ambient": {
+    "sounds": [
+      "mob/villager/idle1",
+      "mob/villager/idle2",
+      "mob/villager/idle3"
+    ],
+    "subtitle": "subtitles.entity.kamenridercraft.urataros.ambient"
   },
   "entity.kamenridercraft.bikaiser.ambient": {
     "sounds": [
@@ -1866,6 +2023,10 @@
     "sounds": ["mob/ghast/fireball4"],
     "subtitle": "subtitles.entity.kamenridercraft.dark_ghost.shoot"
   },
+  "entity.kamenridercraft.gorilla_can.death": {
+    "sounds": ["mob/villager/death"],
+    "subtitle": "subtitles.entity.kamenridercraft.gorilla_can.death"
+  },
   "entity.kamenridercraft.zectrooper.hurt": {
     "sounds": [
       "mob/pillager/hurt1",
@@ -1900,6 +2061,15 @@
     ],
     "subtitle": "subtitles.entity.kamenridercraft.eld.hurt"
   },
+  "entity.kamenridercraft.tojima_takoyaki.hurt": {
+    "sounds": [
+      "mob/villager/hit1",
+      "mob/villager/hit2",
+      "mob/villager/hit3",
+      "mob/villager/hit4"
+    ],
+    "subtitle": "subtitles.entity.kamenridercraft.tojima_takoyaki.hurt"
+  },
   "entity.kamenridercraft.uva_mob.shoot": {
     "sounds": ["mob/ghast/fireball4"],
     "subtitle": "subtitles.entity.kamenridercraft.uva_mob.shoot"
@@ -1919,6 +2089,19 @@
       "mob/pillager/hurt3"
     ],
     "subtitle": "subtitles.entity.kamenridercraft.aranbura_bugster_mob.hurt"
+  },
+  "entity.kamenridercraft.kintaros.hurt": {
+    "sounds": [
+      "mob/villager/hit1",
+      "mob/villager/hit2",
+      "mob/villager/hit3",
+      "mob/villager/hit4"
+    ],
+    "subtitle": "subtitles.entity.kamenridercraft.kintaros.hurt"
+  },
+  "entity.kamenridercraft.tojima_takoyaki.death": {
+    "sounds": ["mob/villager/death"],
+    "subtitle": "subtitles.entity.kamenridercraft.tojima_takoyaki.death"
   },
   "entity.kamenridercraft.dark_necrom.shoot": {
     "sounds": ["mob/ghast/fireball4"],
@@ -2001,6 +2184,10 @@
     ],
     "subtitle": "subtitles.entity.kamenridercraft.shocker_combatman.death"
   },
+  "entity.kamenridercraft.auto_vajin_robo.death": {
+    "sounds": ["mob/villager/death"],
+    "subtitle": "subtitles.entity.kamenridercraft.auto_vajin_robo.death"
+  },
   "entity.kamenridercraft.engine_bros.hurt": {
     "sounds": [
       "mob/pillager/hurt1",
@@ -2043,6 +2230,10 @@
       "mob/pillager/death2"
     ],
     "subtitle": "subtitles.entity.kamenridercraft.muez.death"
+  },
+  "entity.kamenridercraft.garulu.death": {
+    "sounds": ["mob/villager/death"],
+    "subtitle": "subtitles.entity.kamenridercraft.garulu.death"
   },
   "entity.kamenridercraft.mirror_rider.hurt": {
     "sounds": [
@@ -2146,6 +2337,23 @@
     "sounds": ["mob/ghast/fireball4"],
     "subtitle": "subtitles.entity.kamenridercraft.abaddon.shoot"
   },
+  "entity.kamenridercraft.basshaa.hurt": {
+    "sounds": [
+      "mob/villager/hit1",
+      "mob/villager/hit2",
+      "mob/villager/hit3",
+      "mob/villager/hit4"
+    ],
+    "subtitle": "subtitles.entity.kamenridercraft.basshaa.hurt"
+  },
+  "entity.kamenridercraft.torikera_can.ambient": {
+    "sounds": [
+      "mob/villager/idle1",
+      "mob/villager/idle2",
+      "mob/villager/idle3"
+    ],
+    "subtitle": "subtitles.entity.kamenridercraft.torikera_can.ambient"
+  },
   "entity.kamenridercraft.dreatrooper_commander.death": {
     "sounds": [
       "mob/pillager/death1",
@@ -2234,6 +2442,14 @@
     ],
     "subtitle": "subtitles.entity.kamenridercraft.falchion.ambient"
   },
+  "entity.kamenridercraft.kodama_suika_arms.shoot": {
+    "sounds": ["mob/ghast/fireball4"],
+    "subtitle": "subtitles.entity.kamenridercraft.kodama_suika_arms.shoot"
+  },
+  "entity.kamenridercraft.tora_can.shoot": {
+    "sounds": ["mob/ghast/fireball4"],
+    "subtitle": "subtitles.entity.kamenridercraft.tora_can.shoot"
+  },
   "entity.kamenridercraft.nox_mob.death": {
     "sounds": [
       "mob/pillager/death1",
@@ -2317,6 +2533,10 @@
       "mob/pillager/death2"
     ],
     "subtitle": "subtitles.entity.kamenridercraft.killbus.death"
+  },
+  "entity.kamenridercraft.ryutaros.death": {
+    "sounds": ["mob/villager/death"],
+    "subtitle": "subtitles.entity.kamenridercraft.ryutaros.death"
   },
   "entity.kamenridercraft.apollogeist.shoot": {
     "sounds": ["mob/ghast/fireball4"],
@@ -2576,6 +2796,23 @@
     ],
     "subtitle": "subtitles.entity.kamenridercraft.queen_bee_deadman.ambient"
   },
+  "entity.kamenridercraft.ankh_mob.ambient": {
+    "sounds": [
+      "mob/villager/idle1",
+      "mob/villager/idle2",
+      "mob/villager/idle3"
+    ],
+    "subtitle": "subtitles.entity.kamenridercraft.ankh_mob.ambient"
+  },
+  "entity.kamenridercraft.dogga.hurt": {
+    "sounds": [
+      "mob/villager/hit1",
+      "mob/villager/hit2",
+      "mob/villager/hit3",
+      "mob/villager/hit4"
+    ],
+    "subtitle": "subtitles.entity.kamenridercraft.dogga.hurt"
+  },
   "entity.kamenridercraft.dodo_magia.hurt": {
     "sounds": [
       "mob/pillager/hurt1",
@@ -2658,6 +2895,10 @@
       "mob/pillager/hurt3"
     ],
     "subtitle": "subtitles.entity.kamenridercraft.black_satan_soldier.hurt"
+  },
+  "entity.kamenridercraft.batta_can.death": {
+    "sounds": ["mob/villager/death"],
+    "subtitle": "subtitles.entity.kamenridercraft.batta_can.death"
   },
   "entity.kamenridercraft.decade_violent.hurt": {
     "sounds": [
@@ -2823,12 +3064,25 @@
     ],
     "subtitle": "subtitles.entity.kamenridercraft.ginga.death"
   },
+  "entity.kamenridercraft.taka_watchroid.death": {
+    "sounds": ["mob/villager/death"],
+    "subtitle": "subtitles.entity.kamenridercraft.taka_watchroid.death"
+  },
   "entity.kamenridercraft.dread.death": {
     "sounds": [
       "mob/pillager/death1",
       "mob/pillager/death2"
     ],
     "subtitle": "subtitles.entity.kamenridercraft.dread.death"
+  },
+  "entity.kamenridercraft.gorilla_can.hurt": {
+    "sounds": [
+      "mob/villager/hit1",
+      "mob/villager/hit2",
+      "mob/villager/hit3",
+      "mob/villager/hit4"
+    ],
+    "subtitle": "subtitles.entity.kamenridercraft.gorilla_can.hurt"
   },
   "entity.kamenridercraft.shimi.ambient": {
     "sounds": [
@@ -2845,6 +3099,14 @@
       "mob/pillager/death2"
     ],
     "subtitle": "subtitles.entity.kamenridercraft.storious_rider.death"
+  },
+  "entity.kamenridercraft.ptera_can.ambient": {
+    "sounds": [
+      "mob/villager/idle1",
+      "mob/villager/idle2",
+      "mob/villager/idle3"
+    ],
+    "subtitle": "subtitles.entity.kamenridercraft.ptera_can.ambient"
   },
   "entity.kamenridercraft.zooous.ambient": {
     "sounds": [
@@ -2863,6 +3125,10 @@
       "mob/pillager/idle4"
     ],
     "subtitle": "subtitles.entity.kamenridercraft.gord_drive.ambient"
+  },
+  "entity.kamenridercraft.kujaku_can.death": {
+    "sounds": ["mob/villager/death"],
+    "subtitle": "subtitles.entity.kamenridercraft.kujaku_can.death"
   },
   "entity.kamenridercraft.kazari_mob.hurt": {
     "sounds": [
@@ -2894,6 +3160,10 @@
       "mob/pillager/hurt3"
     ],
     "subtitle": "subtitles.entity.kamenridercraft.woz.hurt"
+  },
+  "entity.kamenridercraft.basshaa.death": {
+    "sounds": ["mob/villager/death"],
+    "subtitle": "subtitles.entity.kamenridercraft.basshaa.death"
   },
   "entity.kamenridercraft.arc.death": {
     "sounds": [
@@ -3027,6 +3297,14 @@
       "mob/pillager/idle4"
     ],
     "subtitle": "subtitles.entity.kamenridercraft.medusa_phantom.ambient"
+  },
+  "entity.kamenridercraft.kintaros.ambient": {
+    "sounds": [
+      "mob/villager/idle1",
+      "mob/villager/idle2",
+      "mob/villager/idle3"
+    ],
+    "subtitle": "subtitles.entity.kamenridercraft.kintaros.ambient"
   },
   "entity.kamenridercraft.lord_baron.hurt": {
     "sounds": [
@@ -3254,9 +3532,22 @@
     "sounds": ["mob/ghast/fireball4"],
     "subtitle": "subtitles.entity.kamenridercraft.glotta_stomach.shoot"
   },
+  "entity.kamenridercraft.denkiunagi_can.shoot": {
+    "sounds": ["mob/ghast/fireball4"],
+    "subtitle": "subtitles.entity.kamenridercraft.denkiunagi_can.shoot"
+  },
   "entity.kamenridercraft.chap_grey.shoot": {
     "sounds": ["mob/ghast/fireball4"],
     "subtitle": "subtitles.entity.kamenridercraft.chap_grey.shoot"
+  },
+  "entity.kamenridercraft.urataros.hurt": {
+    "sounds": [
+      "mob/villager/hit1",
+      "mob/villager/hit2",
+      "mob/villager/hit3",
+      "mob/villager/hit4"
+    ],
+    "subtitle": "subtitles.entity.kamenridercraft.urataros.hurt"
   },
   "entity.kamenridercraft.ginga.ambient": {
     "sounds": [
@@ -3382,6 +3673,14 @@
     ],
     "subtitle": "subtitles.entity.kamenridercraft.dire_wolf_sold_magia.hurt"
   },
+  "entity.kamenridercraft.garulu.ambient": {
+    "sounds": [
+      "mob/villager/idle1",
+      "mob/villager/idle2",
+      "mob/villager/idle3"
+    ],
+    "subtitle": "subtitles.entity.kamenridercraft.garulu.ambient"
+  },
   "entity.kamenridercraft.jyamatorider.ambient": {
     "sounds": [
       "mob/pillager/idle1",
@@ -3408,6 +3707,14 @@
       "mob/pillager/death2"
     ],
     "subtitle": "subtitles.entity.kamenridercraft.dodo_magia_chick.death"
+  },
+  "entity.kamenridercraft.ankh_mob.shoot": {
+    "sounds": ["mob/ghast/fireball4"],
+    "subtitle": "subtitles.entity.kamenridercraft.ankh_mob.shoot"
+  },
+  "entity.kamenridercraft.basshaa.shoot": {
+    "sounds": ["mob/ghast/fireball4"],
+    "subtitle": "subtitles.entity.kamenridercraft.basshaa.shoot"
   },
   "entity.kamenridercraft.moose_fangire.ambient": {
     "sounds": [
@@ -3509,6 +3816,10 @@
       "mob/pillager/death2"
     ],
     "subtitle": "subtitles.entity.kamenridercraft.yummy_mob.death"
+  },
+  "entity.kamenridercraft.torikera_can.death": {
+    "sounds": ["mob/villager/death"],
+    "subtitle": "subtitles.entity.kamenridercraft.torikera_can.death"
   },
   "entity.kamenridercraft.duke.hurt": {
     "sounds": [
@@ -3619,6 +3930,10 @@
     ],
     "subtitle": "subtitles.entity.kamenridercraft.desast.ambient"
   },
+  "entity.kamenridercraft.tako_can.shoot": {
+    "sounds": ["mob/ghast/fireball4"],
+    "subtitle": "subtitles.entity.kamenridercraft.tako_can.shoot"
+  },
   "entity.kamenridercraft.evol.shoot": {
     "sounds": ["mob/ghast/fireball4"],
     "subtitle": "subtitles.entity.kamenridercraft.evol.shoot"
@@ -3682,6 +3997,10 @@
     ],
     "subtitle": "subtitles.entity.kamenridercraft.legeiel.death"
   },
+  "entity.kamenridercraft.ptera_can.shoot": {
+    "sounds": ["mob/ghast/fireball4"],
+    "subtitle": "subtitles.entity.kamenridercraft.ptera_can.shoot"
+  },
   "entity.kamenridercraft.n_daguva_zeba.ambient": {
     "sounds": [
       "mob/pillager/idle1",
@@ -3742,6 +4061,14 @@
     ],
     "subtitle": "subtitles.entity.kamenridercraft.bocca_jaldak.hurt"
   },
+  "entity.kamenridercraft.ankh_mob.death": {
+    "sounds": ["mob/villager/death"],
+    "subtitle": "subtitles.entity.kamenridercraft.ankh_mob.death"
+  },
+  "entity.kamenridercraft.dogga.shoot": {
+    "sounds": ["mob/ghast/fireball4"],
+    "subtitle": "subtitles.entity.kamenridercraft.dogga.shoot"
+  },
   "entity.kamenridercraft.nazca_dopant.ambient": {
     "sounds": [
       "mob/pillager/idle1",
@@ -3754,6 +4081,15 @@
   "entity.kamenridercraft.pantheras_luteus.shoot": {
     "sounds": ["mob/ghast/fireball4"],
     "subtitle": "subtitles.entity.kamenridercraft.pantheras_luteus.shoot"
+  },
+  "entity.kamenridercraft.garulu.hurt": {
+    "sounds": [
+      "mob/villager/hit1",
+      "mob/villager/hit2",
+      "mob/villager/hit3",
+      "mob/villager/hit4"
+    ],
+    "subtitle": "subtitles.entity.kamenridercraft.garulu.hurt"
   },
   "entity.kamenridercraft.bugstervirus_mob.death": {
     "sounds": [
@@ -3784,6 +4120,10 @@
       "mob/pillager/death2"
     ],
     "subtitle": "subtitles.entity.kamenridercraft.gatton_bugster_mob.death"
+  },
+  "entity.kamenridercraft.ptera_can.death": {
+    "sounds": ["mob/villager/death"],
+    "subtitle": "subtitles.entity.kamenridercraft.ptera_can.death"
   },
   "entity.kamenridercraft.dreatrooper_commander.hurt": {
     "sounds": [
@@ -3840,6 +4180,10 @@
   "entity.kamenridercraft.legeiel.shoot": {
     "sounds": ["mob/ghast/fireball4"],
     "subtitle": "subtitles.entity.kamenridercraft.legeiel.shoot"
+  },
+  "entity.kamenridercraft.denkiunagi_can.death": {
+    "sounds": ["mob/villager/death"],
+    "subtitle": "subtitles.entity.kamenridercraft.denkiunagi_can.death"
   },
   "entity.kamenridercraft.lord_baron.ambient": {
     "sounds": [
@@ -4004,6 +4348,10 @@
     ],
     "subtitle": "subtitles.entity.kamenridercraft.powered_up_core.ambient"
   },
+  "entity.kamenridercraft.torikera_can.shoot": {
+    "sounds": ["mob/ghast/fireball4"],
+    "subtitle": "subtitles.entity.kamenridercraft.torikera_can.shoot"
+  },
   "entity.kamenridercraft.gamma_commandos.hurt": {
     "sounds": [
       "mob/pillager/hurt1",
@@ -4036,6 +4384,14 @@
     ],
     "subtitle": "subtitles.entity.kamenridercraft.giff_junior.ambient"
   },
+  "entity.kamenridercraft.dogga.ambient": {
+    "sounds": [
+      "mob/villager/idle1",
+      "mob/villager/idle2",
+      "mob/villager/idle3"
+    ],
+    "subtitle": "subtitles.entity.kamenridercraft.dogga.ambient"
+  },
   "entity.kamenridercraft.dreatrooper.shoot": {
     "sounds": ["mob/ghast/fireball4"],
     "subtitle": "subtitles.entity.kamenridercraft.dreatrooper.shoot"
@@ -4051,6 +4407,14 @@
       "mob/pillager/hurt3"
     ],
     "subtitle": "subtitles.entity.kamenridercraft.brain_roidmude.hurt"
+  },
+  "entity.kamenridercraft.momotaros.ambient": {
+    "sounds": [
+      "mob/villager/idle1",
+      "mob/villager/idle2",
+      "mob/villager/idle3"
+    ],
+    "subtitle": "subtitles.entity.kamenridercraft.momotaros.ambient"
   },
   "entity.kamenridercraft.ikazuchi.shoot": {
     "sounds": ["mob/ghast/fireball4"],
@@ -4068,6 +4432,10 @@
   "entity.kamenridercraft.glare2.shoot": {
     "sounds": ["mob/ghast/fireball4"],
     "subtitle": "subtitles.entity.kamenridercraft.glare2.shoot"
+  },
+  "entity.kamenridercraft.dogga.death": {
+    "sounds": ["mob/villager/death"],
+    "subtitle": "subtitles.entity.kamenridercraft.dogga.death"
   },
   "entity.kamenridercraft.zooous.shoot": {
     "sounds": ["mob/ghast/fireball4"],
@@ -4159,6 +4527,10 @@
     ],
     "subtitle": "subtitles.entity.kamenridercraft.touto_guardian.death"
   },
+  "entity.kamenridercraft.tako_can.death": {
+    "sounds": ["mob/villager/death"],
+    "subtitle": "subtitles.entity.kamenridercraft.tako_can.death"
+  },
   "entity.kamenridercraft.goda.death": {
     "sounds": [
       "mob/pillager/death1",
@@ -4193,6 +4565,14 @@
       "mob/pillager/hurt3"
     ],
     "subtitle": "subtitles.entity.kamenridercraft.charybdis.hurt"
+  },
+  "entity.kamenridercraft.tako_can.ambient": {
+    "sounds": [
+      "mob/villager/idle1",
+      "mob/villager/idle2",
+      "mob/villager/idle3"
+    ],
+    "subtitle": "subtitles.entity.kamenridercraft.tako_can.ambient"
   },
   "entity.kamenridercraft.engine_bros.ambient": {
     "sounds": [
@@ -4379,6 +4759,14 @@
     ],
     "subtitle": "subtitles.entity.kamenridercraft.medic_roidmude.ambient"
   },
+  "entity.kamenridercraft.batta_can.ambient": {
+    "sounds": [
+      "mob/villager/idle1",
+      "mob/villager/idle2",
+      "mob/villager/idle3"
+    ],
+    "subtitle": "subtitles.entity.kamenridercraft.batta_can.ambient"
+  },
   "entity.kamenridercraft.lord_baron.death": {
     "sounds": [
       "mob/pillager/death1",
@@ -4486,6 +4874,10 @@
     ],
     "subtitle": "subtitles.entity.kamenridercraft.durendal.hurt"
   },
+  "entity.kamenridercraft.kintaros.shoot": {
+    "sounds": ["mob/ghast/fireball4"],
+    "subtitle": "subtitles.entity.kamenridercraft.kintaros.shoot"
+  },
   "entity.kamenridercraft.taboo_dopant.shoot": {
     "sounds": ["mob/ghast/fireball4"],
     "subtitle": "subtitles.entity.kamenridercraft.taboo_dopant.shoot"
@@ -4581,6 +4973,10 @@
     ],
     "subtitle": "subtitles.entity.kamenridercraft.motors_bugster_mob.hurt"
   },
+  "entity.kamenridercraft.ryutaros.shoot": {
+    "sounds": ["mob/ghast/fireball4"],
+    "subtitle": "subtitles.entity.kamenridercraft.ryutaros.shoot"
+  },
   "entity.kamenridercraft.dread.shoot": {
     "sounds": ["mob/ghast/fireball4"],
     "subtitle": "subtitles.entity.kamenridercraft.dread.shoot"
@@ -4624,6 +5020,15 @@
     ],
     "subtitle": "subtitles.entity.kamenridercraft.cronus.death"
   },
+  "entity.kamenridercraft.kujaku_can.hurt": {
+    "sounds": [
+      "mob/villager/hit1",
+      "mob/villager/hit2",
+      "mob/villager/hit3",
+      "mob/villager/hit4"
+    ],
+    "subtitle": "subtitles.entity.kamenridercraft.kujaku_can.hurt"
+  },
   "entity.kamenridercraft.blood_stalk.ambient": {
     "sounds": [
       "mob/pillager/idle1",
@@ -4652,6 +5057,10 @@
       "mob/pillager/idle4"
     ],
     "subtitle": "subtitles.entity.kamenridercraft.core.ambient"
+  },
+  "entity.kamenridercraft.batta_can.shoot": {
+    "sounds": ["mob/ghast/fireball4"],
+    "subtitle": "subtitles.entity.kamenridercraft.batta_can.shoot"
   },
   "entity.kamenridercraft.remocon_bros.ambient": {
     "sounds": [
@@ -4686,6 +5095,19 @@
       "mob/pillager/idle4"
     ],
     "subtitle": "subtitles.entity.kamenridercraft.charybdis.ambient"
+  },
+  "entity.kamenridercraft.ankh_mob.hurt": {
+    "sounds": [
+      "mob/villager/hit1",
+      "mob/villager/hit2",
+      "mob/villager/hit3",
+      "mob/villager/hit4"
+    ],
+    "subtitle": "subtitles.entity.kamenridercraft.ankh_mob.hurt"
+  },
+  "entity.kamenridercraft.kodama_suika_arms.death": {
+    "sounds": ["mob/villager/death"],
+    "subtitle": "subtitles.entity.kamenridercraft.kodama_suika_arms.death"
   },
   "entity.kamenridercraft.kurokage_trooper.hurt": {
     "sounds": [
@@ -4868,6 +5290,15 @@
     ],
     "subtitle": "subtitles.entity.kamenridercraft.bitter_gavv.ambient"
   },
+  "entity.kamenridercraft.momotaros.hurt": {
+    "sounds": [
+      "mob/villager/hit1",
+      "mob/villager/hit2",
+      "mob/villager/hit3",
+      "mob/villager/hit4"
+    ],
+    "subtitle": "subtitles.entity.kamenridercraft.momotaros.hurt"
+  },
   "entity.kamenridercraft.muchiri_mob.hurt": {
     "sounds": [
       "mob/pillager/hurt1",
@@ -4922,6 +5353,10 @@
   "entity.kamenridercraft.zein.shoot": {
     "sounds": ["mob/ghast/fireball4"],
     "subtitle": "subtitles.entity.kamenridercraft.zein.shoot"
+  },
+  "entity.kamenridercraft.momotaros.shoot": {
+    "sounds": ["mob/ghast/fireball4"],
+    "subtitle": "subtitles.entity.kamenridercraft.momotaros.shoot"
   },
   "entity.kamenridercraft.gaelijah.hurt": {
     "sounds": [
@@ -4998,6 +5433,10 @@
     ],
     "subtitle": "subtitles.entity.kamenridercraft.pawnjyamato_mob.ambient"
   },
+  "entity.kamenridercraft.taka_watchroid.shoot": {
+    "sounds": ["mob/ghast/fireball4"],
+    "subtitle": "subtitles.entity.kamenridercraft.taka_watchroid.shoot"
+  },
   "entity.kamenridercraft.n_daguva_zeba.death": {
     "sounds": [
       "mob/pillager/death1",
@@ -5024,6 +5463,15 @@
       "mob/pillager/death2"
     ],
     "subtitle": "subtitles.entity.kamenridercraft.hard_guardian.death"
+  },
+  "entity.kamenridercraft.taka_can.hurt": {
+    "sounds": [
+      "mob/villager/hit1",
+      "mob/villager/hit2",
+      "mob/villager/hit3",
+      "mob/villager/hit4"
+    ],
+    "subtitle": "subtitles.entity.kamenridercraft.taka_can.hurt"
   },
   "entity.kamenridercraft.ancient_ooo.hurt": {
     "sounds": [
@@ -5175,6 +5623,15 @@
     ],
     "subtitle": "subtitles.entity.kamenridercraft.nox_mob.hurt"
   },
+  "entity.kamenridercraft.batta_can.hurt": {
+    "sounds": [
+      "mob/villager/hit1",
+      "mob/villager/hit2",
+      "mob/villager/hit3",
+      "mob/villager/hit4"
+    ],
+    "subtitle": "subtitles.entity.kamenridercraft.batta_can.hurt"
+  },
   "entity.kamenridercraft.kabuki.ambient": {
     "sounds": [
       "mob/pillager/idle1",
@@ -5218,6 +5675,15 @@
       "mob/pillager/hurt3"
     ],
     "subtitle": "subtitles.entity.kamenridercraft.falchion.hurt"
+  },
+  "entity.kamenridercraft.denkiunagi_can.hurt": {
+    "sounds": [
+      "mob/villager/hit1",
+      "mob/villager/hit2",
+      "mob/villager/hit3",
+      "mob/villager/hit4"
+    ],
+    "subtitle": "subtitles.entity.kamenridercraft.denkiunagi_can.hurt"
   },
   "entity.kamenridercraft.necrom.death": {
     "sounds": [
@@ -5343,6 +5809,14 @@
     ],
     "subtitle": "subtitles.entity.kamenridercraft.elementary_inves_red.ambient"
   },
+  "entity.kamenridercraft.auto_vajin_robo.ambient": {
+    "sounds": [
+      "mob/villager/idle1",
+      "mob/villager/idle2",
+      "mob/villager/idle3"
+    ],
+    "subtitle": "subtitles.entity.kamenridercraft.auto_vajin_robo.ambient"
+  },
   "entity.kamenridercraft.zooous.death": {
     "sounds": [
       "mob/pillager/death1",
@@ -5376,6 +5850,15 @@
     ],
     "subtitle": "subtitles.entity.kamenridercraft.ikazuchi.death"
   },
+  "entity.kamenridercraft.ryutaros.hurt": {
+    "sounds": [
+      "mob/villager/hit1",
+      "mob/villager/hit2",
+      "mob/villager/hit3",
+      "mob/villager/hit4"
+    ],
+    "subtitle": "subtitles.entity.kamenridercraft.ryutaros.hurt"
+  },
   "entity.kamenridercraft.orga.hurt": {
     "sounds": [
       "mob/pillager/hurt1",
@@ -5383,6 +5866,15 @@
       "mob/pillager/hurt3"
     ],
     "subtitle": "subtitles.entity.kamenridercraft.orga.hurt"
+  },
+  "entity.kamenridercraft.torikera_can.hurt": {
+    "sounds": [
+      "mob/villager/hit1",
+      "mob/villager/hit2",
+      "mob/villager/hit3",
+      "mob/villager/hit4"
+    ],
+    "subtitle": "subtitles.entity.kamenridercraft.torikera_can.hurt"
   },
   "entity.kamenridercraft.trilobite_magia.death": {
     "sounds": [
@@ -5687,6 +6179,10 @@
     ],
     "subtitle": "subtitles.entity.kamenridercraft.glare2.ambient"
   },
+  "entity.kamenridercraft.gorilla_can.shoot": {
+    "sounds": ["mob/ghast/fireball4"],
+    "subtitle": "subtitles.entity.kamenridercraft.gorilla_can.shoot"
+  },
   "entity.kamenridercraft.anguis_masculus.death": {
     "sounds": [
       "mob/pillager/death1",
@@ -5766,6 +6262,10 @@
     ],
     "subtitle": "subtitles.entity.kamenridercraft.gaoh.hurt"
   },
+  "entity.kamenridercraft.kintaros.death": {
+    "sounds": ["mob/villager/death"],
+    "subtitle": "subtitles.entity.kamenridercraft.kintaros.death"
+  },
   "entity.kamenridercraft.god_warfare_agent.shoot": {
     "sounds": ["mob/ghast/fireball4"],
     "subtitle": "subtitles.entity.kamenridercraft.god_warfare_agent.shoot"
@@ -5817,6 +6317,15 @@
     ],
     "subtitle": "subtitles.entity.kamenridercraft.kaiser_reverse.ambient"
   },
+  "entity.kamenridercraft.taka_watchroid.hurt": {
+    "sounds": [
+      "mob/villager/hit1",
+      "mob/villager/hit2",
+      "mob/villager/hit3",
+      "mob/villager/hit4"
+    ],
+    "subtitle": "subtitles.entity.kamenridercraft.taka_watchroid.hurt"
+  },
   "entity.kamenridercraft.hokuto_guardian.ambient": {
     "sounds": [
       "mob/pillager/idle1",
@@ -5842,6 +6351,10 @@
     ],
     "subtitle": "subtitles.entity.kamenridercraft.black_satan_soldier.ambient"
   },
+  "entity.kamenridercraft.tojima_takoyaki.shoot": {
+    "sounds": ["mob/ghast/fireball4"],
+    "subtitle": "subtitles.entity.kamenridercraft.tojima_takoyaki.shoot"
+  },
   "entity.kamenridercraft.charlie_bugster_mob.death": {
     "sounds": [
       "mob/pillager/death1",
@@ -5857,6 +6370,10 @@
       "mob/pillager/idle4"
     ],
     "subtitle": "subtitles.entity.kamenridercraft.dreatrooper.ambient"
+  },
+  "entity.kamenridercraft.garulu.shoot": {
+    "sounds": ["mob/ghast/fireball4"],
+    "subtitle": "subtitles.entity.kamenridercraft.garulu.shoot"
   },
   "entity.kamenridercraft.kaiden_bugster_mob.hurt": {
     "sounds": [
@@ -6002,6 +6519,14 @@
       "mob/pillager/death2"
     ],
     "subtitle": "subtitles.entity.kamenridercraft.dark_necrom.death"
+  },
+  "entity.kamenridercraft.taka_can.ambient": {
+    "sounds": [
+      "mob/villager/idle1",
+      "mob/villager/idle2",
+      "mob/villager/idle3"
+    ],
+    "subtitle": "subtitles.entity.kamenridercraft.taka_can.ambient"
   },
   "entity.kamenridercraft.midaredouji.death": {
     "sounds": [
