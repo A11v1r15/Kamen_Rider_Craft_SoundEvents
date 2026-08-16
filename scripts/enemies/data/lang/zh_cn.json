@@ -2,9 +2,5 @@
 	"subtitles.entity.kamenridercraft.henchman.ambient": "杂兵：咕哝",
 	"subtitles.entity.kamenridercraft.henchman.death": "杂兵：死亡",
 	"subtitles.entity.kamenridercraft.henchman.hurt": "杂兵：受伤",
-	"subtitles.entity.kamenridercraft.henchman.shoot": "杂兵：射击",
-	"subtitles.entity.kamenridercraft.abaddon.ambient": "假面骑士·亚巴顿：咕哝",
-	"subtitles.entity.kamenridercraft.abaddon.death": "假面骑士·亚巴顿：死亡",
-	"subtitles.entity.kamenridercraft.abaddon.hurt": "假面骑士·亚巴顿：受伤",
-	"subtitles.entity.kamenridercraft.abaddon.shoot": "假面骑士·亚巴顿：射击"
+	"subtitles.entity.kamenridercraft.henchman.shoot": "杂兵：射击"
 }

@@ -2,9 +2,5 @@
 	"subtitles.entity.kamenridercraft.henchman.ambient": "Henchman murmurs",
 	"subtitles.entity.kamenridercraft.henchman.death": "Henchman dies",
 	"subtitles.entity.kamenridercraft.henchman.hurt": "Henchman hurts",
-	"subtitles.entity.kamenridercraft.henchman.shoot": "Henchman shoots",
-	"subtitles.entity.kamenridercraft.abaddon.ambient": "Kamen Rider Abaddon murmurs",
-	"subtitles.entity.kamenridercraft.abaddon.death": "Kamen Rider Abaddon dies",
-	"subtitles.entity.kamenridercraft.abaddon.hurt": "Kamen Rider Abaddon hurts",
-	"subtitles.entity.kamenridercraft.abaddon.shoot": "Kamen Rider Abaddon shoots"
+	"subtitles.entity.kamenridercraft.henchman.shoot": "Henchman shoots"
 }

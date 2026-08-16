@@ -30,7 +30,7 @@ public class KamenRiderCraftSoundEvents {
 	public static final Supplier<SoundEvent> HENCHMAN_HURT = registerSoundEvent("entity.kamenridercraft.henchman.hurt");
 	public static final Supplier<SoundEvent> HENCHMAN_DEATH = registerSoundEvent("entity.kamenridercraft.henchman.death");
 	public static final Supplier<SoundEvent> HENCHMAN_SHOOT = registerSoundEvent("entity.kamenridercraft.henchman.shoot");
-
+//GENERATED
 	public static final Supplier<SoundEvent> ABADDON_AMBIENT = registerSoundEvent("entity.kamenridercraft.abaddon.ambient");
 	public static final Supplier<SoundEvent> ABADDON_HURT = registerSoundEvent("entity.kamenridercraft.abaddon.hurt");
 	public static final Supplier<SoundEvent> ABADDON_DEATH = registerSoundEvent("entity.kamenridercraft.abaddon.death");
@@ -911,7 +911,7 @@ public class KamenRiderCraftSoundEvents {
 	public static final Supplier<SoundEvent> ZU_GUMUN_BA_HURT = registerSoundEvent("entity.kamenridercraft.zu_gumun_ba.hurt");
 	public static final Supplier<SoundEvent> ZU_GUMUN_BA_DEATH = registerSoundEvent("entity.kamenridercraft.zu_gumun_ba.death");
 	public static final Supplier<SoundEvent> ZU_GUMUN_BA_SHOOT = registerSoundEvent("entity.kamenridercraft.zu_gumun_ba.shoot");
-
+//GENERATED_END
 
 	private static Supplier<SoundEvent> registerSoundEvent(String name) {
 		ResourceLocation id = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftSoundEvents.MODID, name);

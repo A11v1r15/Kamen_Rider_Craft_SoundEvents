@@ -1,10 +1,12 @@
 StringList footsoldierList = new StringList();
 StringList bossList = new StringList();
-StringList enemyList = new StringList();
+StringList allyList = new StringList();
+StringList mobList = new StringList();
 StringDict constants = new StringDict();
 StringDict identifiers = new StringDict();
 String footsoldierMixin;
 String bossMixin;
+String allyMixin;
 
 void setup() {
   String[] mobsCore = loadStrings("../../../../Kamen_Rider_Craft/src/main/java/com/kelco/kamenridercraft/entity/mobs/MobsCore.java");
@@ -25,16 +27,21 @@ void setup() {
   }
   footsoldierList.append(loadStrings("footsoldiers.txt"));
   bossList.append(loadStrings("bosses.txt"));
-  enemyList.append(footsoldierList);
-  enemyList.append(bossList);
-  enemyList.sort();
-  footsoldierMixin = String.join("\n'", loadStrings("../../../src/main/java/net/a11v1r15/kamenridercraftsoundevents/mixin/foot_soldiers/AbaddonEntityMixin.java"));
+  allyList.append(loadStrings("allies.txt"));
+  mobList.append(footsoldierList);
+  mobList.append(bossList);
+  mobList.append(allyList);
+  mobList.sort();
+  footsoldierMixin = String.join("\n", loadStrings("../../../src/main/java/net/a11v1r15/kamenridercraftsoundevents/mixin/foot_soldiers/AbaddonEntityMixin.java"));
   bossMixin = footsoldierMixin
     .replace("package net.a11v1r15.kamenridercraftsoundevents.mixin.foot_soldiers;", "package net.a11v1r15.kamenridercraftsoundevents.mixin.bosses;")
     .replace("import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.AbaddonEntity;", "import com.kelco.kamenridercraft.entity.mobs.bosses.AbaddonEntity;");
+  allyMixin = String.join("\n", loadStrings("../../../src/main/java/net/a11v1r15/kamenridercraftsoundevents/mixin/allies/AnkhEntityMixin.java"));
 
   String referenceFootsoldier = "AbaddonEntity";
   String referenceFootsoldierName = referenceFootsoldier.substring(0, referenceFootsoldier.length() - 6);
+  String referenceAlly = "AnkhEntity";
+  String referenceAllyName = referenceAlly.substring(0, referenceAlly.length() - 6);
 
   String KamenRiderCraftSoundEvents = "";
 
@@ -49,79 +56,100 @@ void setup() {
 
   JSONArray mixins_jsonMixins = mixins_json.getJSONArray("mixins");
 
-  JSONArray sounds_jsonAmbient = new JSONArray();
-  sounds_jsonAmbient.append("mob/pillager/idle1");
-  sounds_jsonAmbient.append("mob/pillager/idle2");
-  sounds_jsonAmbient.append("mob/pillager/idle3");
-  sounds_jsonAmbient.append("mob/pillager/idle4");
-  JSONArray sounds_jsonDeath = new JSONArray();
-  sounds_jsonDeath.append("mob/pillager/death1");
-  sounds_jsonDeath.append("mob/pillager/death2");
-  JSONArray sounds_jsonHurt = new JSONArray();
-  sounds_jsonHurt.append("mob/pillager/hurt1");
-  sounds_jsonHurt.append("mob/pillager/hurt2");
-  sounds_jsonHurt.append("mob/pillager/hurt3");
-  JSONArray sounds_jsonShoot = new JSONArray();
-  sounds_jsonShoot.append("mob/ghast/fireball4");
+  JSONArray sounds_jsonAmbientEnemy = new JSONArray();
+  sounds_jsonAmbientEnemy.append("mob/pillager/idle1");
+  sounds_jsonAmbientEnemy.append("mob/pillager/idle2");
+  sounds_jsonAmbientEnemy.append("mob/pillager/idle3");
+  sounds_jsonAmbientEnemy.append("mob/pillager/idle4");
+  JSONArray sounds_jsonDeathEnemy = new JSONArray();
+  sounds_jsonDeathEnemy.append("mob/pillager/death1");
+  sounds_jsonDeathEnemy.append("mob/pillager/death2");
+  JSONArray sounds_jsonHurtEnemy = new JSONArray();
+  sounds_jsonHurtEnemy.append("mob/pillager/hurt1");
+  sounds_jsonHurtEnemy.append("mob/pillager/hurt2");
+  sounds_jsonHurtEnemy.append("mob/pillager/hurt3");
+  JSONArray sounds_jsonShootEnemy = new JSONArray();
+  sounds_jsonShootEnemy.append("mob/ghast/fireball4");
+  
+  JSONArray sounds_jsonAmbientAlly = new JSONArray();
+  sounds_jsonAmbientAlly.append("mob/villager/idle1");
+  sounds_jsonAmbientAlly.append("mob/villager/idle2");
+  sounds_jsonAmbientAlly.append("mob/villager/idle3");
+  JSONArray sounds_jsonDeathAlly = new JSONArray();
+  sounds_jsonDeathAlly.append("mob/villager/death");
+  JSONArray sounds_jsonHurtAlly = new JSONArray();
+  sounds_jsonHurtAlly.append("mob/villager/hit1");
+  sounds_jsonHurtAlly.append("mob/villager/hit2");
+  sounds_jsonHurtAlly.append("mob/villager/hit3");
+  sounds_jsonHurtAlly.append("mob/villager/hit4");
+  JSONArray sounds_jsonShootAlly = new JSONArray();
+  sounds_jsonShootAlly.append("mob/ghast/fireball4");
 
-  for (String enemy : enemyList) {
-    String enemyName = enemy.substring(0, enemy.length() - 6);
-    String enemyType = "";
-    if (footsoldierList.hasValue(enemy)) {
-      enemyType = "foot_soldiers";
-    } else if (bossList.hasValue(enemy)) {
-      enemyType = "bosses";
+  for (String mob : mobList) {
+    String mobName = mob.substring(0, mob.length() - 6);
+    String mobType = "";
+    if (footsoldierList.hasValue(mob)) {
+      mobType = "foot_soldiers";
+    } else if (bossList.hasValue(mob)) {
+      mobType = "bosses";
+    } else if (allyList.hasValue(mob)) {
+      mobType = "allies";
     }
-    if (!enemy.equals(referenceFootsoldier)) {
-      KamenRiderCraftSoundEvents += "  public static final Supplier<SoundEvent> " + constants.get(enemy) + "_AMBIENT = registerSoundEvent(\"entity.kamenridercraft." + identifiers.get(enemy) + ".ambient\");\n";
-      KamenRiderCraftSoundEvents += "  public static final Supplier<SoundEvent> " + constants.get(enemy) + "_HURT = registerSoundEvent(\"entity.kamenridercraft." + identifiers.get(enemy) + ".hurt\");\n";
-      KamenRiderCraftSoundEvents += "  public static final Supplier<SoundEvent> " + constants.get(enemy) + "_DEATH = registerSoundEvent(\"entity.kamenridercraft." + identifiers.get(enemy) + ".death\");\n";
-      KamenRiderCraftSoundEvents += "  public static final Supplier<SoundEvent> " + constants.get(enemy) + "_SHOOT = registerSoundEvent(\"entity.kamenridercraft." + identifiers.get(enemy) + ".shoot\");\n";
 
-      mixins_jsonMixins.append(enemyType + "." + enemy + "Mixin");
+    KamenRiderCraftSoundEvents += "\tpublic static final Supplier<SoundEvent> " + constants.get(mob) + "_AMBIENT = registerSoundEvent(\"entity.kamenridercraft." + identifiers.get(mob) + ".ambient\");\n";
+    KamenRiderCraftSoundEvents += "\tpublic static final Supplier<SoundEvent> " + constants.get(mob) + "_HURT = registerSoundEvent(\"entity.kamenridercraft." + identifiers.get(mob) + ".hurt\");\n";
+    KamenRiderCraftSoundEvents += "\tpublic static final Supplier<SoundEvent> " + constants.get(mob) + "_DEATH = registerSoundEvent(\"entity.kamenridercraft." + identifiers.get(mob) + ".death\");\n";
+    KamenRiderCraftSoundEvents += "\tpublic static final Supplier<SoundEvent> " + constants.get(mob) + "_SHOOT = registerSoundEvent(\"entity.kamenridercraft." + identifiers.get(mob) + ".shoot\");\n";
 
-      JSONObject newAmbient = new JSONObject();
-      newAmbient.setJSONArray("sounds", sounds_jsonAmbient);
-      newAmbient.setString("subtitle", "subtitles.entity.kamenridercraft." + identifiers.get(enemy) + ".ambient");
-      sounds_json.setJSONObject("entity.kamenridercraft." + identifiers.get(enemy) + ".ambient", newAmbient);
-      JSONObject newDeath = new JSONObject();
-      newDeath.setJSONArray("sounds", sounds_jsonDeath);
-      newDeath.setString("subtitle", "subtitles.entity.kamenridercraft." + identifiers.get(enemy) + ".death");
-      sounds_json.setJSONObject("entity.kamenridercraft." + identifiers.get(enemy) + ".death", newDeath);
-      JSONObject newHurt = new JSONObject();
-      newHurt.setJSONArray("sounds", sounds_jsonHurt);
-      newHurt.setString("subtitle", "subtitles.entity.kamenridercraft." + identifiers.get(enemy) + ".hurt");
-      sounds_json.setJSONObject("entity.kamenridercraft." + identifiers.get(enemy) + ".hurt", newHurt);
-      JSONObject newShoot = new JSONObject();
-      newShoot.setJSONArray("sounds", sounds_jsonShoot);
-      newShoot.setString("subtitle", "subtitles.entity.kamenridercraft." + identifiers.get(enemy) + ".shoot");
-      sounds_json.setJSONObject("entity.kamenridercraft." + identifiers.get(enemy) + ".shoot", newShoot);
+    mixins_jsonMixins.append(mobType + "." + mob + "Mixin");
 
-      lang_en_us.setString("subtitles.entity.kamenridercraft." + identifiers.get(enemy) + ".ambient", origin_lang_en_us.getString("entity.kamenridercraft." + identifiers.get(enemy)) + " murmurs");
-      lang_en_us.setString("subtitles.entity.kamenridercraft." + identifiers.get(enemy) + ".death", origin_lang_en_us.getString("entity.kamenridercraft." + identifiers.get(enemy)) + " dies");
-      lang_en_us.setString("subtitles.entity.kamenridercraft." + identifiers.get(enemy) + ".hurt", origin_lang_en_us.getString("entity.kamenridercraft." + identifiers.get(enemy)) + " hurts");
-      lang_en_us.setString("subtitles.entity.kamenridercraft." + identifiers.get(enemy) + ".shoot", origin_lang_en_us.getString("entity.kamenridercraft." + identifiers.get(enemy)) + " shoots");
+    JSONObject newAmbient = new JSONObject();
+    newAmbient.setJSONArray("sounds", mobType == "allies"? sounds_jsonAmbientAlly : sounds_jsonAmbientEnemy);
+    newAmbient.setString("subtitle", "subtitles.entity.kamenridercraft." + identifiers.get(mob) + ".ambient");
+    sounds_json.setJSONObject("entity.kamenridercraft." + identifiers.get(mob) + ".ambient", newAmbient);
+    JSONObject newDeath = new JSONObject();
+    newDeath.setJSONArray("sounds", mobType == "allies"? sounds_jsonDeathAlly : sounds_jsonDeathEnemy);
+    newDeath.setString("subtitle", "subtitles.entity.kamenridercraft." + identifiers.get(mob) + ".death");
+    sounds_json.setJSONObject("entity.kamenridercraft." + identifiers.get(mob) + ".death", newDeath);
+    JSONObject newHurt = new JSONObject();
+    newHurt.setJSONArray("sounds", mobType == "allies"? sounds_jsonHurtAlly : sounds_jsonHurtEnemy);
+    newHurt.setString("subtitle", "subtitles.entity.kamenridercraft." + identifiers.get(mob) + ".hurt");
+    sounds_json.setJSONObject("entity.kamenridercraft." + identifiers.get(mob) + ".hurt", newHurt);
+    JSONObject newShoot = new JSONObject();
+    newShoot.setJSONArray("sounds", mobType == "allies"? sounds_jsonShootAlly : sounds_jsonShootEnemy);
+    newShoot.setString("subtitle", "subtitles.entity.kamenridercraft." + identifiers.get(mob) + ".shoot");
+    sounds_json.setJSONObject("entity.kamenridercraft." + identifiers.get(mob) + ".shoot", newShoot);
 
-      lang_ja_jp.setString("subtitles.entity.kamenridercraft." + identifiers.get(enemy) + ".ambient", origin_lang_ja_jp.getString("entity.kamenridercraft." + identifiers.get(enemy)) + "がつぶやく");
-      lang_ja_jp.setString("subtitles.entity.kamenridercraft." + identifiers.get(enemy) + ".death", origin_lang_ja_jp.getString("entity.kamenridercraft." + identifiers.get(enemy)) + "が死ぬ");
-      lang_ja_jp.setString("subtitles.entity.kamenridercraft." + identifiers.get(enemy) + ".hurt", origin_lang_ja_jp.getString("entity.kamenridercraft." + identifiers.get(enemy)) + "がダメージを受ける");
-      lang_ja_jp.setString("subtitles.entity.kamenridercraft." + identifiers.get(enemy) + ".shoot", origin_lang_ja_jp.getString("entity.kamenridercraft." + identifiers.get(enemy)) + "が発射する");
+    lang_en_us.setString("subtitles.entity.kamenridercraft." + identifiers.get(mob) + ".ambient", origin_lang_en_us.getString("entity.kamenridercraft." + identifiers.get(mob)) + " murmurs");
+    lang_en_us.setString("subtitles.entity.kamenridercraft." + identifiers.get(mob) + ".death", origin_lang_en_us.getString("entity.kamenridercraft." + identifiers.get(mob)) + " dies");
+    lang_en_us.setString("subtitles.entity.kamenridercraft." + identifiers.get(mob) + ".hurt", origin_lang_en_us.getString("entity.kamenridercraft." + identifiers.get(mob)) + " hurts");
+    lang_en_us.setString("subtitles.entity.kamenridercraft." + identifiers.get(mob) + ".shoot", origin_lang_en_us.getString("entity.kamenridercraft." + identifiers.get(mob)) + " shoots");
 
-      lang_zh_cn.setString("subtitles.entity.kamenridercraft." + identifiers.get(enemy) + ".ambient", origin_lang_zh_cn.getString("entity.kamenridercraft." + identifiers.get(enemy)) + "：咕哝");
-      lang_zh_cn.setString("subtitles.entity.kamenridercraft." + identifiers.get(enemy) + ".death", origin_lang_zh_cn.getString("entity.kamenridercraft." + identifiers.get(enemy)) + "：死亡");
-      lang_zh_cn.setString("subtitles.entity.kamenridercraft." + identifiers.get(enemy) + ".hurt", origin_lang_zh_cn.getString("entity.kamenridercraft." + identifiers.get(enemy)) + "：受伤");
-      lang_zh_cn.setString("subtitles.entity.kamenridercraft." + identifiers.get(enemy) + ".shoot", origin_lang_zh_cn.getString("entity.kamenridercraft." + identifiers.get(enemy)) + "：射击");
+    lang_ja_jp.setString("subtitles.entity.kamenridercraft." + identifiers.get(mob) + ".ambient", origin_lang_ja_jp.getString("entity.kamenridercraft." + identifiers.get(mob)) + "がつぶやく");
+    lang_ja_jp.setString("subtitles.entity.kamenridercraft." + identifiers.get(mob) + ".death", origin_lang_ja_jp.getString("entity.kamenridercraft." + identifiers.get(mob)) + "が死ぬ");
+    lang_ja_jp.setString("subtitles.entity.kamenridercraft." + identifiers.get(mob) + ".hurt", origin_lang_ja_jp.getString("entity.kamenridercraft." + identifiers.get(mob)) + "がダメージを受ける");
+    lang_ja_jp.setString("subtitles.entity.kamenridercraft." + identifiers.get(mob) + ".shoot", origin_lang_ja_jp.getString("entity.kamenridercraft." + identifiers.get(mob)) + "が発射する");
 
-      if (enemyType == "foot_soldiers") {
-        saveStrings("../../src/main/java/net/a11v1r15/kamenridercraftsoundevents/mixin/foot_soldiers/" + enemy + "Mixin.java",
-          footsoldierMixin.replace(referenceFootsoldierName, enemyName).replace(constants.get(referenceFootsoldier), constants.get(enemy)).split("\n\'"));
-      } else if (enemyType == "bosses") {
-        saveStrings("../../src/main/java/net/a11v1r15/kamenridercraftsoundevents/mixin/bosses/" + enemy + "Mixin.java",
-          bossMixin.replace(referenceFootsoldierName, enemyName).replace(constants.get(referenceFootsoldier), constants.get(enemy)).split("\n\'"));
-      }
+    lang_zh_cn.setString("subtitles.entity.kamenridercraft." + identifiers.get(mob) + ".ambient", origin_lang_zh_cn.getString("entity.kamenridercraft." + identifiers.get(mob)) + "：咕哝");
+    lang_zh_cn.setString("subtitles.entity.kamenridercraft." + identifiers.get(mob) + ".death", origin_lang_zh_cn.getString("entity.kamenridercraft." + identifiers.get(mob)) + "：死亡");
+    lang_zh_cn.setString("subtitles.entity.kamenridercraft." + identifiers.get(mob) + ".hurt", origin_lang_zh_cn.getString("entity.kamenridercraft." + identifiers.get(mob)) + "：受伤");
+    lang_zh_cn.setString("subtitles.entity.kamenridercraft." + identifiers.get(mob) + ".shoot", origin_lang_zh_cn.getString("entity.kamenridercraft." + identifiers.get(mob)) + "：射击");
+
+    if (mobType == "foot_soldiers" && !mob.equals(referenceFootsoldier)) {
+      saveStrings("../../src/main/java/net/a11v1r15/kamenridercraftsoundevents/mixin/foot_soldiers/" + mob + "Mixin.java",
+        footsoldierMixin.replace(referenceFootsoldierName, mobName).replace(constants.get(referenceFootsoldier), constants.get(mob)).split("\n"));
+    } else if (mobType == "bosses") {
+      saveStrings("../../src/main/java/net/a11v1r15/kamenridercraftsoundevents/mixin/bosses/" + mob + "Mixin.java",
+        bossMixin.replace(referenceFootsoldierName, mobName).replace(constants.get(referenceFootsoldier), constants.get(mob)).split("\n"));
+    } else if (mobType == "allies" && !mob.equals(referenceAlly)) {
+      saveStrings("../../src/main/java/net/a11v1r15/kamenridercraftsoundevents/mixin/allies/" + mob + "Mixin.java",
+        allyMixin.replace(referenceAllyName, mobName).replace(constants.get(referenceAlly), constants.get(mob)).split("\n"));
     }
   }
-  saveStrings("KamenRiderCraftSoundEvents.txt", KamenRiderCraftSoundEvents.split("\n"));
+  String mainJava = String.join("\n", loadStrings("../../../src/main/java/net/a11v1r15/kamenridercraftsoundevents/KamenRiderCraftSoundEvents.java"));
+  String mainJavaGenerated = match(mainJava, "//GENERATED(.*?)//GENERATED_END")[1];
+  mainJava = mainJava.replace(mainJavaGenerated, "\n" + KamenRiderCraftSoundEvents);
+  saveStrings("../../src/main/java/net/a11v1r15/kamenridercraftsoundevents/KamenRiderCraftSoundEvents.java", mainJava.split("\n\'"));
 
   mixins_json.setJSONArray("mixins", mixins_jsonMixins);
   saveJSONObject(mixins_json, "../../src/main/resources/kamenridercraftsoundevents.mixins.json");

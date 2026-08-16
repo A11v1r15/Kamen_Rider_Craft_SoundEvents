@@ -2,9 +2,5 @@
 	"subtitles.entity.kamenridercraft.henchman.ambient": "手先がつぶやく",
 	"subtitles.entity.kamenridercraft.henchman.death": "手先が死ぬ",
 	"subtitles.entity.kamenridercraft.henchman.hurt": "手先がダメージを受ける",
-	"subtitles.entity.kamenridercraft.henchman.shoot": "手先が発射する",
-	"subtitles.entity.kamenridercraft.abaddon.ambient": "仮面ライダーアバドンがつぶやく",
-	"subtitles.entity.kamenridercraft.abaddon.death": "仮面ライダーアバドンが死ぬ",
-	"subtitles.entity.kamenridercraft.abaddon.hurt": "仮面ライダーアバドンがダメージを受ける",
-	"subtitles.entity.kamenridercraft.abaddon.shoot": "仮面ライダーアバドンが発射する"
+	"subtitles.entity.kamenridercraft.henchman.shoot": "手先が発射する"
 }
