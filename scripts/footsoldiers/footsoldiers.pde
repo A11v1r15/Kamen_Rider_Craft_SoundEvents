@@ -4,7 +4,7 @@ StringDict identifiers = new StringDict();
 String mixin;
 
 void setup() {
-  String[] mobsCore = loadStrings("../../../Kamen_Rider_Craft/src/main/java/com/kelco/kamenridercraft/entity/mobs/MobsCore.java");
+  String[] mobsCore = loadStrings("../../../../Kamen_Rider_Craft/src/main/java/com/kelco/kamenridercraft/entity/mobs/MobsCore.java");
   for (String line : mobsCore) {
     if (line.contains("DeferredHolder<EntityType<?>")) {
       try {
@@ -21,7 +21,7 @@ void setup() {
     }
   }
   footsoldierList = loadStrings("footsoldiers.txt");
-  mixin = String.join("\n'", loadStrings("../../src/main/java/net/a11v1r15/kamenridercraftsoundevents/mixin/foot_soldiers/AbaddonEntityMixin.java"));
+  mixin = String.join("\n'", loadStrings("../../../src/main/java/net/a11v1r15/kamenridercraftsoundevents/mixin/foot_soldiers/AbaddonEntityMixin.java"));
 
   String firstFootsoldier = footsoldierList[0];
   String firstFootsoldierName = firstFootsoldier.substring(0, firstFootsoldier.length() - 6);
@@ -33,9 +33,9 @@ void setup() {
   JSONObject lang_en_us = loadJSONObject("lang/en_us.json");
   JSONObject lang_ja_jp = loadJSONObject("lang/ja_jp.json");
   JSONObject lang_zh_cn = loadJSONObject("lang/zh_cn.json");
-  JSONObject origin_lang_en_us = loadJSONObject("../../../Kamen_Rider_Craft/src/main/resources/assets/kamenridercraft/lang/en_us.json");
-  JSONObject origin_lang_ja_jp = loadJSONObject("../../../Kamen_Rider_Craft/src/main/resources/assets/kamenridercraft/lang/ja_jp.json");
-  JSONObject origin_lang_zh_cn = loadJSONObject("../../../Kamen_Rider_Craft/src/main/resources/assets/kamenridercraft/lang/zh_cn.json");
+  JSONObject origin_lang_en_us = loadJSONObject("../../../../Kamen_Rider_Craft/src/main/resources/assets/kamenridercraft/lang/en_us.json");
+  JSONObject origin_lang_ja_jp = loadJSONObject("../../../../Kamen_Rider_Craft/src/main/resources/assets/kamenridercraft/lang/ja_jp.json");
+  JSONObject origin_lang_zh_cn = loadJSONObject("../../../../Kamen_Rider_Craft/src/main/resources/assets/kamenridercraft/lang/zh_cn.json");
 
   JSONArray mixins_jsonMixins = mixins_json.getJSONArray("mixins");
 
@@ -96,20 +96,20 @@ void setup() {
       lang_zh_cn.setString("subtitles.entity.kamenridercraft." + identifiers.get(footsoldier) + ".hurt", origin_lang_zh_cn.getString("entity.kamenridercraft." + identifiers.get(footsoldier)) + "：受伤");
       lang_zh_cn.setString("subtitles.entity.kamenridercraft." + identifiers.get(footsoldier) + ".shoot", origin_lang_zh_cn.getString("entity.kamenridercraft." + identifiers.get(footsoldier)) + "：射击");
 
-      saveStrings("../src/main/java/net/a11v1r15/kamenridercraftsoundevents/mixin/foot_soldiers/" + footsoldier + "Mixin.java",
+      saveStrings("../../src/main/java/net/a11v1r15/kamenridercraftsoundevents/mixin/foot_soldiers/" + footsoldier + "Mixin.java",
         mixin.replace(firstFootsoldierName, footsoldierName).replace(constants.get(firstFootsoldier), constants.get(footsoldier)).split("\n\'"));
     }
   }
   saveStrings("KamenRiderCraftSoundEvents.txt", KamenRiderCraftSoundEvents.split("\n"));
   
   mixins_json.setJSONArray("mixins", mixins_jsonMixins);
-  saveJSONObject(mixins_json, "../src/main/resources/kamenridercraftsoundevents.mixins.json");
+  saveJSONObject(mixins_json, "../../src/main/resources/kamenridercraftsoundevents.mixins.json");
   
-  saveJSONObject(sounds_json, "../src/main/resources/assets/kamenridercraftsoundevents/sounds.json");
+  saveJSONObject(sounds_json, "../../src/main/resources/assets/kamenridercraftsoundevents/sounds.json");
 
-  saveJSONObject(lang_en_us, "../src/main/resources/assets/kamenridercraftsoundevents/lang/en_us.json");
-  saveJSONObject(lang_ja_jp, "../src/main/resources/assets/kamenridercraftsoundevents/lang/ja_jp.json");
-  saveJSONObject(lang_zh_cn, "../src/main/resources/assets/kamenridercraftsoundevents/lang/zh_cn.json");
+  saveJSONObject(lang_en_us, "../../src/main/resources/assets/kamenridercraftsoundevents/lang/en_us.json");
+  saveJSONObject(lang_ja_jp, "../../src/main/resources/assets/kamenridercraftsoundevents/lang/ja_jp.json");
+  saveJSONObject(lang_zh_cn, "../../src/main/resources/assets/kamenridercraftsoundevents/lang/zh_cn.json");
 
 
   exit();
