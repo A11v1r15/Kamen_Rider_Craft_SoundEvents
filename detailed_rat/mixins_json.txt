@@ -1,7 +1,3 @@
-{
-  "mixins": [
-    "foot_soldiers.BaseHenchmenEntityMixin",
-    "foot_soldiers.AbaddonEntityMixin",
     "foot_soldiers.AgentEntityMixin",
     "foot_soldiers.AnguisMasculusEntityMixin",
     "foot_soldiers.AriCommandoEntityMixin",
@@ -60,11 +56,4 @@
     "foot_soldiers.YummyEntityMixin",
     "foot_soldiers.ZectrooperEntityMixin",
     "foot_soldiers.ZeinEnemySummonEntityMixin",
-    "foot_soldiers.ZuGumunBaEntityMixin"
-  ],
-  "package": "net.a11v1r15.kamenridercraftsoundevents.mixin",
-  "injectors": {"defaultRequire": 1},
-  "compatibilityLevel": "JAVA_21",
-  "client": [],
-  "required": true
-}
+    "foot_soldiers.ZuGumunBaEntityMixin",
