@@ -2,6 +2,7 @@ AbaddonEntity
 AgentEntity
 AnguisMasculusEntity
 AriCommandoEntity
+BabyNightmareEntity
 BakenekoEntity
 BattaAugmentEntity
 BattleRaiderEntity
@@ -41,6 +42,7 @@ MasqueradeEntity
 NebulaBugsterVirusEntity
 NeotrooperEntity
 NewMoleImaginSandEntity
+NightmareEntity
 PantherasLuteusEntity
 PawnJyamatoEntity
 ReaperlegionEntity

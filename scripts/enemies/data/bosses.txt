@@ -20,6 +20,7 @@ BuildEntity
 CaliburEntity
 CariesEntity
 CastleLostSmashEntity
+CatastropheGoreNightmareEntity
 CaucasusEntity
 CharlieBugsterEntity
 CharybdisHerculesEntity
@@ -30,6 +31,7 @@ CronusEntity
 DaiouikaDeadmanEntity
 DarkDriveEntity
 DarkGhostEntity
+DawnEntity
 DecadeViolentEntity
 DemushuEntity
 DesastEntity
@@ -85,6 +87,7 @@ LangoEntity
 LegeielEntity
 LegeielForbiddenEntity
 LordBaronEntity
+LordThreeEntity
 MadRogueEntity
 MagiaEntity
 MarikaEntity
@@ -107,11 +110,13 @@ NewMoleImaginEntity
 NightRogueEntity
 NoxEntity
 NyelvEntity
+OblivionGoreNightmareEntity
 OdinEntity
 OrgaEntity
 OwlLostSmashEntity
 ParaDxEntity
 PhantomCrusherEntity
+PhantomGoreNightmareEntity
 PhoenixPhantomEntity
 PoppyRedEntity
 PoseidonEntity
@@ -129,6 +134,7 @@ SabelaEntity
 SaltyBugsterEntity
 ServalTigerSoldMagiaEntity
 ShadowmoonEntity
+ShadowNightmareEntity
 ShiitaEntity
 ShinNo0Entity
 ShockerGreeedEntity
@@ -155,6 +161,7 @@ ZaiaEntity
 ZamonasEntity
 ZangetsuShinEntity
 ZeinEntity
+ZeztzDarknessNightmareEntity
 ZonjisEntity
 ZooousEntity
 ZooousPredatorEntity

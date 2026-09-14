@@ -2,6 +2,7 @@ AnkhEntity
 AutoVajinRoboEntity
 BasshaaEntity
 BattaCanEntity
+CodeZeroEntity
 DenkiunagiCanEntity
 DoggaEntity
 GaruluEntity
